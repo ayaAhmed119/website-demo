@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Resume</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8; /* Light off-white background */
+    }
+
+    header {
+      background: #007ba7; /* Cerulean */
+      color: #f8f8f8; /* Off-white */
+      padding: 15px 0;
+      text-align: center;
+      font-size: 1.5rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #f2f2f2; /* Slightly darker off-white */
+      padding: 10px 0;
+      border-bottom: 1px solid #ddd;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      margin: 0 15px;
+      padding: 5px 10px;
+      font-size: 1rem;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #007ba7; /* Cerulean */
+      border-bottom: 2px solid #007ba7;
+    }
+
+    .container {
+      display: flex;
+      height: calc(100vh - 140px); /* Full height minus header and nav */
+    }
+
+    .sidebar {
+      width: 20%;
+      background: #007ba7; /* Cerulean */
+      color: #f8f8f8; /* Off-white */
+      padding: 20px;
+      font-size: 0.9rem;
+      text-align: center;
+      overflow-y: auto;
+      border-radius: 10px;
+    }
+
+    .content {
+      width: 60%;
+      border: 1px solid #ddd;
+      background-color: #ffffff; /* Pure white for content */
+      margin: 0 10px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    CV . Resume
+  </header>
+
+  <nav>
+    <a href="home.html" target="iframe-content">CV</a>
+    <a href="what-i-do.html" target="iframe-content">What I do</a>
+    <a href="skills.html" target="iframe-content">Skills</a>
+    <a href="good-at.html" target="iframe-content">Good At</a>
+    <a href="contact-us.html" target="iframe-content">Contact Us</a>
+    <a href="feedback.html" target="iframe-content">Feedback</a>
+    <a href="overview.html" target="iframe-content">Overview</a>
+  </nav>
+
+  <div class="container">
+    <div class="sidebar">
+    </div>
+
+    <div class="content">
+      <iframe src="home.html" name="iframe-content"></iframe>
+    </div>
+
+    <div class="sidebar">
+    </div>
+  </div>
+</body>
+</html>
