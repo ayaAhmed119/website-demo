@@ -31,8 +31,8 @@
 
     .slides {
       display: flex;
-      width: 600%; /* 6 slides, so 100% x 6 */
-      animation: slide-animation 5s infinite; /* Faster transition duration */
+      width: 100%; /* 6 slides, so 100% x 6 */
+      animation: slide-animation 10s infinite; /* Faster transition duration */
     }
 
     .slides iframe {
@@ -68,7 +68,7 @@
       0% { transform: translateX(0%); }
       16.66% { transform: translateX(0%); }
       33.33% { transform: translateX(-100%); }
-      50% { transform: translateX(-200%); }
+      50% { transform: translateX(-100%); }
       66.66% { transform: translateX(-300%); }
       83.33% { transform: translateX(-400%); }
       100% { transform: translateX(-500%); }
